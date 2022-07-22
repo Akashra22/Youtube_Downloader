@@ -45,9 +45,11 @@ def audio_download():
     else :
         root.destroy() 
 
-Label(root, text="Youtube downloader", font='calibri 13 bold').pack()
+youtube_icon = PhotoImage(file = r"File_Directory\Youtube.png")
+url_icon = PhotoImage(file = r"File_Directory\URL.png")
+Label(root, text="  Youtube downloader", font='calibri 13 bold', image =youtube_icon, compound = LEFT).pack()
 link = StringVar() # Specifying the variable type
-Label(root, text="Paste URL", font='calibri 14 bold').place(x=200, y=55)
+Label(root, text="Paste URL  ", font='calibri 14 bold', image =url_icon, compound = RIGHT).place(x=200, y=55)
 link_enter = Entry(root, width=70, textvariable=link).place(x=35, y=95)
 
 video_icon = PhotoImage(file = r"File_Directory\video.png")
