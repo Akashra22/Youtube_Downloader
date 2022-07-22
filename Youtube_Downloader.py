@@ -1,3 +1,8 @@
+"""
+Important notice: Before starting using it please metion the path in which the (youtube_icon, url_icon,video_icon, music_icon) image path in the code.
+The lines in which it need to mentioned are respectively 53,54,60,61
+"""
+
 import os
 from tkinter import *
 from pytube import YouTube
